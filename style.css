@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  /* color: rgb(238, 3, 3); */
+  color: #333;
+  width: 90%;
+  margin: auto;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 70px;
+}
+
+.app-text {
+  text-align: center;
+}
+.note-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note-item {
+  text-align: center;
+  padding: 70px;
+  background-color: rgb(233, 233, 233);
+  /* background-color: rgb(225, 228, 58); */
+  box-shadow: 5px 5px 2px rgba(128, 128, 128, 0.233);
+  margin: 10px;
+  /* width: 350px; */
+}
+
+.note-item span {
+  font-size: 20px;
+}
+
+form { 
+  text-align: center;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  padding: 10px;
+  width: 550px;
+  border-radius: 5px;
+  border: 3px solid rgb(98, 98, 98);
+}
+
+button {
+  font-size: 20px;
+  border-radius: 7px;
+  margin-left: 15px;
+  padding: 5px 15px;
+  background-color: rgb(104, 214, 241);
+}
