@@ -55,10 +55,26 @@ input[type="text"] {
   border: 3px solid rgb(98, 98, 98);
 }
 
-button {
+.save-btn {
   font-size: 20px;
   border-radius: 7px;
   margin-left: 15px;
   padding: 5px 15px;
   background-color: rgb(104, 214, 241);
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }

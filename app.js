@@ -16,6 +16,12 @@ function addNote(name, noteText) {
   renderNote(note);
 }
 
+
+function handleClick(node) {
+  console.log('hej');
+  remove()
+}
+
 function renderNote(note) {
   localStorage.setItem('noteItems', JSON.stringify(noteItems));
 
@@ -25,8 +31,9 @@ function renderNote(note) {
   node.setAttribute('class', `note-item`);
   node.setAttribute('data-key', note.id);
   node.innerHTML = `
+  <div onclick="handleClick(node)"><i class="fa fa-times" aria-hidden="true"></i></div>
   <span><i>written by: ${note.name}</i>
-  <p>${note.noteText}</p></span>
+  <p>${note.noteText}</p>
   `;
 
   if (item) {
