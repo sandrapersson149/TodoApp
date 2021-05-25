@@ -58,9 +58,13 @@ input[type="text"] {
 .save-btn {
   font-size: 20px;
   border-radius: 7px;
+  border: none;
   margin-left: 15px;
-  padding: 5px 15px;
-  background-color: rgb(104, 214, 241);
+  padding: 10px 20px;
+  background-color: rgb(73, 195, 226);
+}
+.save-btn:hover {
+  cursor: pointer;
 }
 
 .svg-icon {
