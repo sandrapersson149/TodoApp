@@ -17,9 +17,9 @@ function addNote(name, noteText) {
 }
 
 
-function handleClick(node) {
-  console.log('hej');
-  remove()
+function handleClick() {
+  console.log(localStorage.getItem());
+  // localStorage.removeItem();
 }
 
 function renderNote(note) {
@@ -31,7 +31,7 @@ function renderNote(note) {
   node.setAttribute('class', `note-item`);
   node.setAttribute('data-key', note.id);
   node.innerHTML = `
-  <div onclick="handleClick(node)"><i class="fa fa-times" aria-hidden="true"></i></div>
+  <div onclick="handleClick()"><i class="fa fa-times" aria-hidden="true"></i></div>
   <span><i>written by: ${note.name}</i>
   <p>${note.noteText}</p>
   `;
